@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+Sitemap: https://gfmtraining.com/sitemap.xml
+Sitemap: https://gfmtraining.com/sitemap-index.xml
