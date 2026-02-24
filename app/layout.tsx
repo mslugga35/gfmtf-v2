@@ -23,11 +23,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://gfmtraining.com"),
   title: {
-    default: "GFM Training Academy | Elite Baseball & Softball Training in Sanford, FL",
+    default: "GFM Training Academy | High-Level Baseball & Softball Training in Seminole County, FL",
     template: "%s | GFM Training Academy",
   },
   description:
-    "Elite baseball and softball training in Central Florida. Specialized programs for homeschool athletes, Florida Virtual School students, and travel ball players. Private lessons, group training, and academy programs in Sanford, FL.",
+    "High-level baseball and softball training in Seminole County, FL. Specialized daytime programs for homeschool athletes and Florida Virtual School students. Private lessons, group training, and academy programs. Contact for workout schedules and location.",
   keywords: [
     // Homeschool Training
     "homeschool baseball training central florida",
