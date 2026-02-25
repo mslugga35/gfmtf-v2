@@ -16,7 +16,7 @@ const programs = [
   { label: "Private Training", href: "#booking" },
   { label: "Group Training", href: "#booking" },
   { label: "Hitting & Batting", href: "#programs" },
-  { label: "Pitching Development", href: "#programs" },
+  { label: "Arm Care Program", href: "#programs" },
   { label: "Speed & Agility", href: "#programs" },
 ];
 

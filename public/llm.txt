@@ -16,8 +16,7 @@ GFM Training Academy is an elite baseball and softball training facility in Sanf
 2. **1-on-1 Private Training** - Individual lessons with video analysis
 3. **Group & Team Training** - Small group sessions for travel ball teams
 4. **Hitting & Batting Lessons** - Swing mechanics and bat speed development
-5. **Pitching Development** - Velocity, mechanics, and pitch arsenal training
-6. **Arm Care Program** - Injury prevention and arm health
+5. **Arm Care Program** - Injury prevention and arm health
 7. **Speed & Agility Training** - 60-yard dash improvement, baserunning
 8. **Fielding Fundamentals** - Infield and outfield defensive training
 

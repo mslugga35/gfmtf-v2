@@ -54,11 +54,6 @@ export const metadata: Metadata = {
     "hitting instructor seminole county",
     "swing mechanics training oviedo",
     "bat speed training central florida",
-    // Pitching
-    "pitching lessons orlando fl",
-    "baseball pitching coach sanford",
-    "softball pitching lessons seminole county",
-    "pitching velocity training lake mary",
     // Arm Care
     "arm care program orlando",
     "baseball arm health training sanford",
@@ -247,15 +242,6 @@ const jsonLd = {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Pitching Development",
-              description:
-                "Complete pitching program covering mechanics, velocity training, and pitch arsenal development in Orlando and Sanford.",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
               name: "Arm Care Program",
               description:
                 "Injury prevention and arm health program for baseball and softball pitchers in Seminole County.",
@@ -360,7 +346,7 @@ const jsonLd = {
           name: "What training programs does GFM Training Academy offer?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "We offer Homeschool Athlete Training, 1-on-1 Private Training with video analysis, Group & Team Training for travel ball teams, Hitting & Batting Lessons, Pitching Development, Arm Care Programs for injury prevention, Speed & Agility Training including 60-yard dash improvement, and Fielding Fundamentals for infielders and outfielders.",
+            text: "We offer Homeschool Athlete Training, 1-on-1 Private Training with video analysis, Group & Team Training for travel ball teams, Hitting & Batting Lessons, Arm Care Programs for injury prevention, Speed & Agility Training including 60-yard dash improvement, and Fielding Fundamentals for infielders and outfielders.",
           },
         },
         {
