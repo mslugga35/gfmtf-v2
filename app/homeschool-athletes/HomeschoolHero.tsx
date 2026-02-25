@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { GraduationCap, Clock, CheckCircle2, ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -113,10 +114,12 @@ export default function HomeschoolHero() {
           >
             <div className="relative aspect-[4/5] bg-white/10 rounded-sm overflow-hidden">
               {/* Homeschool training image - young athlete fielding */}
-              <img
+              <Image
                 src="/2.webp"
                 alt="Youth athlete training at GFM Training Academy - homeschool baseball program"
-                className="absolute inset-0 w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="50vw"
               />
             </div>
 

@@ -122,7 +122,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {},
   alternates: {
     canonical: "https://gfmtraining.com",
   },

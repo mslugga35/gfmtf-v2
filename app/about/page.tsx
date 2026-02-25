@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MobileStickyBar from "../components/MobileStickyBar";
+import Image from "next/image";
 import { Award, GraduationCap, Trophy, Users, MapPin, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -87,12 +88,15 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Photo */}
               <div className="relative">
-                <div className="aspect-square bg-charcoal rounded-sm overflow-hidden">
+                <div className="relative aspect-square bg-charcoal rounded-sm overflow-hidden">
                   {/* Coach Larry working with young athlete */}
-                  <img
+                  <Image
                     src="/coach-larry.jpg"
                     alt="Coach Larry Grayson - 2x MLB Draft Pick working with youth athlete"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
                 {/* Credentials badge */}
@@ -213,11 +217,13 @@ export default function AboutPage() {
               </div>
 
               <div className="relative">
-                <div className="aspect-video bg-charcoal rounded-sm overflow-hidden">
-                  <img
+                <div className="relative aspect-video bg-charcoal rounded-sm overflow-hidden">
+                  <Image
                     src="/9.webp"
                     alt="Indoor batting cage training at GFM Training Academy"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
               </div>

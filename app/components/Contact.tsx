@@ -151,16 +151,6 @@ export default function Contact() {
                   <ArrowRight size={18} className="text-brass group-hover:translate-x-1 transition-transform" />
                 </a>
 
-                <a
-                  href="tel:+14075190984"
-                  className="flex items-center justify-between p-4 bg-stone border border-charcoal hover:border-brass transition-colors group"
-                >
-                  <div>
-                    <span className="font-semibold text-cream">Academy Elite</span>
-                    <span className="text-slate text-sm ml-2">Year-round program</span>
-                  </div>
-                  <ArrowRight size={18} className="text-brass group-hover:translate-x-1 transition-transform" />
-                </a>
               </div>
 
               {/* Call CTA */}

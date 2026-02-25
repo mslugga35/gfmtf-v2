@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Award, Target, Users, Calendar } from "lucide-react";
 
@@ -40,10 +41,12 @@ export default function Coach() {
           >
             <div className="relative aspect-[4/5] bg-charcoal rounded-sm overflow-hidden">
               {/* Coach Larry working with young athlete */}
-              <img
+              <Image
                 src="/coach-larry.jpg"
                 alt="Coach Larry Grayson working with youth athlete at GFM Training Academy"
-                className="absolute inset-0 w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
 
               {/* Corner accents */}

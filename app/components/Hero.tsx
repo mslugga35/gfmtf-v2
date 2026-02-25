@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, GraduationCap, Clock, MapPin } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -122,10 +123,13 @@ export default function Hero() {
           >
             <div className="relative aspect-[4/5] bg-charcoal rounded-sm overflow-hidden">
               {/* Indoor batting cage training */}
-              <img
+              <Image
                 src="/9.webp"
-                alt="Indoor batting cage training at GFM Training Academy in Sanford FL"
-                className="absolute inset-0 w-full h-full object-cover"
+                alt="Indoor batting cage training at GFM Training Academy in Seminole County FL"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
 
               {/* Overlay gradient */}
