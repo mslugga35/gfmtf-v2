@@ -15,9 +15,8 @@
   /* Accent Colors - Red/Athletic */
   --primary: #DC2626;
   --primary-dark: #B91C1C;
-  --primary-light: #EF4444;
-  --rust: #DC2626;
-  --rust-dark: #B91C1C;
+  --rust: var(--primary);
+  --rust-dark: var(--primary-dark);
   --brass: #F59E0B;
   --success: #10B981;
 

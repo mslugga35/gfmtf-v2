@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MobileStickyBar from "../components/MobileStickyBar";
-import { Award, GraduationCap, Trophy, Users, Calendar, MapPin, ArrowRight } from "lucide-react";
+import { Award, GraduationCap, Trophy, Users, MapPin, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -104,7 +104,7 @@ export default function AboutPage() {
 
               {/* Bio */}
               <div>
-                <div className="w-16 h-1 bg-brass mb-6" />
+                <div className="divider mb-6" />
                 <h1 className="text-[var(--text-display)] text-cream mb-2">
                   COACH LARRY GRAYSON
                 </h1>
@@ -129,7 +129,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4">
-                  <Link href="#booking" className="btn btn-primary">
+                  <Link href="/#booking" className="btn btn-primary">
                     Book a Session
                     <ArrowRight size={18} />
                   </Link>
@@ -151,7 +151,7 @@ export default function AboutPage() {
         <section className="section bg-white grid-bg">
           <div className="container">
             <div className="max-w-3xl mb-12">
-              <div className="w-16 h-1 bg-brass mb-6" />
+              <div className="divider mb-6" />
               <h2 className="text-[var(--text-section)] text-ink mb-4">
                 CREDENTIALS & CAREER
               </h2>
@@ -190,7 +190,7 @@ export default function AboutPage() {
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="w-16 h-1 bg-brass mb-6" />
+                <div className="divider mb-6" />
                 <h2 className="text-[var(--text-section)] text-cream mb-4">
                   TRAINING SPECIALTIES
                 </h2>

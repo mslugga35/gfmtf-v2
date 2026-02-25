@@ -187,6 +187,12 @@ const cardVariants = {
 };
 
 export default function Programs() {
+  const featured = programs.find((p) => p.id === "homeschool")!;
+  const sessionTypes = programs.filter((p) => p.id === "private" || p.id === "group");
+  const skills = programs.filter(
+    (p) => !["homeschool", "private", "group"].includes(p.id)
+  );
+
   return (
     <section id="programs" className="section bg-white grid-bg">
       <div className="container">
@@ -218,17 +224,17 @@ export default function Programs() {
                   </div>
                   <div>
                     <h3 className="text-[var(--text-card)] font-display text-ink">
-                      {programs[0].title}
+                      {featured.title}
                     </h3>
                     <p className="text-sm text-homeschool font-medium">
-                      {programs[0].subtitle}
+                      {featured.subtitle}
                     </p>
                   </div>
                 </div>
-                <p className="text-slate mb-6">{programs[0].description}</p>
+                <p className="text-slate mb-6">{featured.description}</p>
                 <div className="flex flex-wrap gap-4">
-                  <Link href={programs[0].ctaLink} className="btn btn-homeschool">
-                    {programs[0].ctaText}
+                  <Link href={featured.ctaLink} className="btn btn-homeschool">
+                    {featured.ctaText}
                     <ArrowRight size={18} />
                   </Link>
                   <Link href="#booking" className="btn btn-secondary">
@@ -238,7 +244,7 @@ export default function Programs() {
               </div>
               <div>
                 <ul className="space-y-3">
-                  {programs[0].features.map((feature, index) => (
+                  {featured.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle2 size={20} className="text-homeschool flex-shrink-0 mt-0.5" />
                       <span className="text-ink">{feature}</span>
@@ -258,7 +264,7 @@ export default function Programs() {
 
         {/* Session Types Row */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">
-          {programs.slice(1, 3).map((program) => {
+          {sessionTypes.map((program) => {
             const Icon = program.icon;
             return (
               <motion.div
@@ -314,7 +320,7 @@ export default function Programs() {
           viewport={{ once: true }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {programs.slice(3).map((program) => {
+          {skills.map((program) => {
             const Icon = program.icon;
             return (
               <motion.div

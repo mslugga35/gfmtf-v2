@@ -64,7 +64,7 @@ export default function Coach() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="divider bg-brass mb-6" />
+            <div className="divider mb-6" />
             <h2 className="text-[var(--text-section)] text-cream mb-4">
               COACH LARRY GRAYSON
             </h2>

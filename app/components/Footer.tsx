@@ -6,17 +6,18 @@ import { Phone, Mail, MapPin, GraduationCap } from "lucide-react";
 const quickLinks = [
   { href: "/homeschool-athletes", label: "Homeschool Athletes" },
   { href: "#programs", label: "Training Programs" },
-  { href: "#coach", label: "About Coach" },
+  { href: "/about", label: "About Coach" },
   { href: "#booking", label: "Book Session" },
   { href: "#contact", label: "Contact" },
 ];
 
 const programs = [
-  "Private Training",
-  "Group Sessions",
-  "Academy Elite",
-  "Mental Performance",
-  "Sport Conditioning",
+  { label: "Homeschool Training", href: "/homeschool-athletes" },
+  { label: "Private Training", href: "#booking" },
+  { label: "Group Training", href: "#booking" },
+  { label: "Hitting & Batting", href: "#programs" },
+  { label: "Pitching Development", href: "#programs" },
+  { label: "Speed & Agility", href: "#programs" },
 ];
 
 const serviceAreas = [
@@ -84,8 +85,15 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               {programs.map((program) => (
-                <li key={program} className="text-sm">
-                  {program}
+                <li key={program.label}>
+                  <Link
+                    href={program.href}
+                    className={`text-sm hover:text-cream transition-colors ${
+                      program.label === "Homeschool Training" ? "text-homeschool-light" : ""
+                    }`}
+                  >
+                    {program.label}
+                  </Link>
                 </li>
               ))}
             </ul>

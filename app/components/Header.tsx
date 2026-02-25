@@ -8,9 +8,9 @@ import { Menu, X, Phone } from "lucide-react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/homeschool-athletes", label: "Homeschool Athletes" },
-  { href: "#programs", label: "Programs" },
+  { href: "/#programs", label: "Programs" },
   { href: "/about", label: "About Coach" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -28,7 +28,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -53,7 +53,7 @@ export default function Header() {
               <Phone size={16} />
               <span className="mono">(407) 519-0984</span>
             </a>
-            <Link href="#booking" className="btn btn-primary">
+            <Link href="/#booking" className="btn btn-primary">
               Book Training
             </Link>
           </div>
@@ -63,6 +63,7 @@ export default function Header() {
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 text-ink"
             aria-label="Toggle menu"
+            aria-expanded={isOpen}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -78,7 +79,7 @@ export default function Header() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-white border-t border-chalk"
           >
-            <nav className="container py-4 flex flex-col gap-2">
+            <nav aria-label="Mobile navigation" className="container py-4 flex flex-col gap-2">
               {navLinks.map((link, index) => (
                 <motion.div
                   key={link.href}

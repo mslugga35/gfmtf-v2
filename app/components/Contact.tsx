@@ -146,7 +146,7 @@ export default function Contact() {
                 >
                   <div>
                     <span className="font-semibold text-cream">Group Training</span>
-                    <span className="text-slate text-sm ml-2">3-6 players</span>
+                    <span className="text-slate text-sm ml-2">Up to 10 players</span>
                   </div>
                   <ArrowRight size={18} className="text-brass group-hover:translate-x-1 transition-transform" />
                 </a>

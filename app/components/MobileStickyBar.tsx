@@ -10,7 +10,7 @@ export default function MobileStickyBar() {
         <Phone size={18} />
         <span>Call Now</span>
       </a>
-      <Link href="#booking" className="btn btn-secondary">
+      <Link href="/#booking" className="btn btn-secondary">
         <Calendar size={18} />
         <span>Book</span>
       </Link>

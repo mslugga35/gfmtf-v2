@@ -127,11 +127,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    // Add these when you have them
-    // google: "your-google-verification-code",
-    // yandex: "your-yandex-verification-code",
-  },
+  verification: {},
   alternates: {
     canonical: "https://gfmtraining.com",
   },
@@ -174,7 +170,7 @@ const jsonLd = {
         { "@type": "AdministrativeArea", name: "Central Florida" },
       ],
       sameAs: [
-        // Add social media URLs when available
+        "https://www.instagram.com/coachlarrygrayson/",
       ],
       openingHoursSpecification: [
         {
@@ -191,7 +187,7 @@ const jsonLd = {
         },
       ],
       priceRange: "$$",
-      image: "https://gfmtraining.com/facility.jpg",
+      image: "https://gfmtraining.com/9.webp",
     },
     {
       "@type": "LocalBusiness",
