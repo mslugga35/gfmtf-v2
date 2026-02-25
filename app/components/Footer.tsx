@@ -116,11 +116,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:LarrGrayson@gfmtf.com"
+                  href="mailto:LarryGrayson@gfmtf.com"
                   className="flex items-center gap-2 text-sm hover:text-cream transition-colors"
                 >
                   <Mail size={14} />
-                  <span>LarrGrayson@gfmtf.com</span>
+                  <span>LarryGrayson@gfmtf.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm">

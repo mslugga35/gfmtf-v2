@@ -36,7 +36,7 @@ export default function HomeschoolCTA() {
               Call (407) 519-0984
             </a>
             <a
-              href="mailto:LarrGrayson@gfmtf.com?subject=Homeschool%20Training%20Inquiry"
+              href="mailto:LarryGrayson@gfmtf.com?subject=Homeschool%20Training%20Inquiry"
               className="btn btn-secondary"
             >
               <Mail size={18} />
@@ -60,10 +60,10 @@ export default function HomeschoolCTA() {
               <Mail size={24} className="text-homeschool mx-auto mb-2" />
               <div className="text-sm text-slate mb-1">Email</div>
               <a
-                href="mailto:LarrGrayson@gfmtf.com"
+                href="mailto:LarryGrayson@gfmtf.com"
                 className="text-lg font-semibold text-ink hover:text-homeschool transition-colors"
               >
-                LarrGrayson@gfmtf.com
+                LarryGrayson@gfmtf.com
               </a>
             </div>
             <div className="text-center">

@@ -14,8 +14,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "LarrGrayson@gfmtf.com",
-    href: "mailto:LarrGrayson@gfmtf.com",
+    value: "LarryGrayson@gfmtf.com",
+    href: "mailto:LarryGrayson@gfmtf.com",
   },
   {
     icon: MapPin,

@@ -147,7 +147,7 @@ const jsonLd = {
         "Elite baseball and softball training facility specializing in homeschool athlete development, private lessons, and academy programs in Central Florida.",
       url: "https://gfmtraining.com",
       telephone: "+1-407-519-0984",
-      email: "LarrGrayson@gfmtf.com",
+      email: "LarryGrayson@gfmtf.com",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Sanford",
@@ -368,7 +368,7 @@ const jsonLd = {
           name: "How do I schedule training at GFM Training Academy?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Contact us at (407) 519-0984 or email LarrGrayson@gfmtf.com to schedule training. We offer flexible scheduling including daytime sessions for homeschool athletes. Visit gfmtraining.com to learn more about our programs.",
+            text: "Contact us at (407) 519-0984 or email LarryGrayson@gfmtf.com to schedule training. We offer flexible scheduling including daytime sessions for homeschool athletes. Visit gfmtraining.com to learn more about our programs.",
           },
         },
       ],
