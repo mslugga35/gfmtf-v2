@@ -1,25 +1,31 @@
 {
   "headers": [
     {
-      "source": "/(.*\\.(webp|jpg|png|ico))",
+      "source": "/_next/static/(.*)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "Cloudflare-CDN-Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*\\.(?:webp|jpg|png|ico|gif|jpeg|svg))",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+        { "key": "Cloudflare-CDN-Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/(.*\\.(?:woff|woff2|ttf|otf))",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000, immutable" },
+        { "key": "Cloudflare-CDN-Cache-Control", "value": "public, max-age=2592000" }
       ]
     },
     {
       "source": "/robots.txt",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        },
-        {
-          "key": "Content-Type",
-          "value": "text/plain"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "Content-Type", "value": "text/plain" }
       ]
     }
   ]
