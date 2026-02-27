@@ -10,20 +10,19 @@ export const metadata: Metadata = {
   title: "About Coach Larry Grayson | 2x MLB Draft Pick",
   description:
     "Meet Coach Larry Grayson - 2x MLB Draft pick (Oakland A's, Texas Rangers), NJCAA Division 1 All-American, and Oviedo High School County Player of the Year. Elite baseball training in Seminole County, FL.",
-  keywords: [
-    "Larry Grayson baseball coach",
-    "MLB draft pick baseball trainer",
-    "Oviedo High School baseball",
-    "Texas Rangers minor league",
-    "baseball coach Sanford FL",
-    "baseball instructor Orlando",
-    "Seminole County baseball training",
-  ],
   openGraph: {
     title: "Coach Larry Grayson | GFM Training Academy",
     description:
       "2x MLB Draft pick with 5 seasons in professional baseball. Elite training for youth athletes in Central Florida.",
     url: "https://gfmtraining.com/about",
+    images: [
+      {
+        url: "/coach-larry.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Coach Larry Grayson - 2x MLB Draft Pick and founder of GFM Training Academy",
+      },
+    ],
   },
   alternates: {
     canonical: "https://gfmtraining.com/about",

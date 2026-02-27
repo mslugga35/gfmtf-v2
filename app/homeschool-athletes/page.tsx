@@ -11,20 +11,6 @@ export const metadata: Metadata = {
   title: "Homeschool Athlete Training | Daytime Baseball & Softball Programs",
   description:
     "Specialized daytime training for homeschool students and Florida Virtual School athletes in Central Florida. Flexible scheduling, PE credit documentation, small group environment. Baseball and softball development in Sanford, FL.",
-  keywords: [
-    "homeschool baseball training central florida",
-    "homeschool softball training orlando",
-    "florida virtual school athlete training",
-    "flvs sports training",
-    "homeschool pe credit florida",
-    "daytime baseball training sanford",
-    "homeschool sports training seminole county",
-    "homeschool athlete development orlando",
-    "central florida homeschool baseball",
-    "homeschool softball lessons lake mary",
-    "daytime youth sports training",
-    "flexible schedule baseball training",
-  ],
   openGraph: {
     title: "Homeschool Athlete Training | GFM Training Academy",
     description:
@@ -59,6 +45,7 @@ const jsonLd = {
       "@type": "PostalAddress",
       addressLocality: "Sanford",
       addressRegion: "FL",
+      postalCode: "32773",
       addressCountry: "US",
     },
   },

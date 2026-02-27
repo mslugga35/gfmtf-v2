@@ -28,60 +28,16 @@ export const metadata: Metadata = {
   },
   description:
     "High-level baseball and softball training in Seminole County, FL. Specialized daytime programs for homeschool athletes and Florida Virtual School students. Private lessons, group training, and academy programs. Contact for workout schedules and location.",
-  keywords: [
-    // Homeschool Training
-    "homeschool baseball training central florida",
-    "homeschool softball training orlando",
-    "homeschool athlete training seminole county",
-    "florida virtual school athlete training",
-    "flvs sports training sanford",
-    "homeschool PE credit baseball florida",
-    "daytime baseball training sanford",
-    // 1-on-1 Private Training
-    "private baseball lessons sanford fl",
-    "1 on 1 baseball training orlando",
-    "private hitting lessons seminole county",
-    "personal baseball coach lake mary",
-    "individual pitching lessons oviedo",
-    // Group & Team Training
-    "group baseball training orlando",
-    "team baseball training seminole county",
-    "travel ball team training sanford",
-    "small group hitting lessons lake mary",
-    // Hitting & Batting
-    "baseball hitting coach orlando",
-    "batting lessons sanford fl",
-    "hitting instructor seminole county",
-    "swing mechanics training oviedo",
-    "bat speed training central florida",
-    // Arm Care
-    "arm care program orlando",
-    "baseball arm health training sanford",
-    "pitcher arm care seminole county",
-    "throwing program central florida",
-    // Speed & Agility
-    "baseball speed training orlando",
-    "agility training sanford fl",
-    "60 yard dash training seminole county",
-    "baserunning lessons lake mary",
-    // Fielding
-    "fielding lessons orlando",
-    "infield training sanford fl",
-    "defensive baseball training seminole county",
-    "ground ball drills oviedo",
-    // Location Keywords
-    "baseball training sanford fl",
-    "softball training orlando",
-    "youth baseball seminole county",
-    "baseball lessons lake mary",
-    "baseball coaching oviedo",
-    "baseball training winter springs",
-    "softball lessons altamonte springs",
-    "central florida baseball training",
-  ],
   authors: [{ name: "Coach Larry Grayson" }],
   creator: "GFM Training Academy",
   publisher: "GFM Training Academy",
+  verification: {
+    google: "ADD_CODE_HERE", // placeholder - replace with GSC verification code
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   formatDetection: {
     email: false,
     address: false,
@@ -144,14 +100,11 @@ const jsonLd = {
       email: "LarryGrayson@gfmtf.com",
       address: {
         "@type": "PostalAddress",
+        // TODO: Add streetAddress if the facility address is public-facing
         addressLocality: "Sanford",
         addressRegion: "FL",
+        postalCode: "32773",
         addressCountry: "US",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 28.8001,
-        longitude: -81.2732,
       },
       areaServed: [
         { "@type": "City", name: "Sanford" },
@@ -193,8 +146,10 @@ const jsonLd = {
       telephone: "+1-407-519-0984",
       address: {
         "@type": "PostalAddress",
+        // TODO: Add streetAddress if the facility address is public-facing
         addressLocality: "Sanford",
         addressRegion: "FL",
+        postalCode: "32773",
         addressCountry: "US",
       },
       hasOfferCatalog: {
