@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:design-system": "node scripts/lint-design-system.mjs",
+    "lint:design-system:staged": "node scripts/lint-design-system.mjs --staged"
   },
   "dependencies": {
     "framer-motion": "^12.23.26",
